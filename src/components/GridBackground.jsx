@@ -27,9 +27,9 @@ const GridBackground = () => {
 
     return (
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[#000000]">
-            
+
             {/* Interactive Flashlight Glow */}
-            <div 
+            <div
                 className="absolute inset-0 z-[2] opacity-60 transition-opacity duration-300"
                 style={{
                     background: `radial-gradient(800px circle at ${mousePos.x}px ${mousePos.y}px, ${theme.accent}15, transparent 40%)`
@@ -59,13 +59,13 @@ const GridBackground = () => {
             </div>
 
             {/* Infinite Moving 3D Grid Floor (TRON style) */}
-            <div 
-                className="absolute inset-x-0 bottom-0 h-[65vh] origin-bottom pointer-events-none opacity-[0.25] z-[1]" 
-                style={{ 
+            <div
+                className="absolute inset-x-0 bottom-0 h-[65vh] origin-bottom pointer-events-none opacity-[0.25] z-[1]"
+                style={{
                     perspective: '1000px',
                 }}
             >
-                <motion.div 
+                <motion.div
                     animate={{
                         backgroundPosition: ['0px 0px', '0px 80px'] // 80px is the backgroundSize
                     }}
@@ -119,17 +119,17 @@ const GridBackground = () => {
 
             {/* Subtle Vertical Data Streams (Shooting Lasers) */}
             <div className="absolute inset-y-0 right-[15%] w-[1px] opacity-20 pointer-events-none z-[1]" style={{ background: theme.accent }}>
-                <motion.div 
-                    animate={{ y: ['-100%', '1000%'] }} 
-                    transition={{ duration: 4, repeat: Infinity, ease: "linear" }} 
-                    className="w-full h-[15%] bg-white shadow-[0_0_12px_white]" 
+                <motion.div
+                    animate={{ y: ['-100%', '1000%'] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                    className="w-full h-[15%] bg-white shadow-[0_0_12px_white]"
                 />
             </div>
             <div className="absolute inset-y-0 left-[25%] w-[1px] opacity-15 pointer-events-none z-[1]" style={{ background: theme.accent }}>
-                <motion.div 
-                    animate={{ y: ['-100%', '800%'] }} 
-                    transition={{ duration: 6, repeat: Infinity, ease: "linear", delay: 1.5 }} 
-                    className="w-full h-[25%] bg-white shadow-[0_0_12px_white]" 
+                <motion.div
+                    animate={{ y: ['-100%', '800%'] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: "linear", delay: 1.5 }}
+                    className="w-full h-[25%] bg-white shadow-[0_0_12px_white]"
                 />
             </div>
 
@@ -140,10 +140,10 @@ const GridBackground = () => {
                         <span className="text-[8px] md:text-[10px] tracking-[4px] md:tracking-[6px] opacity-50 uppercase" style={{ color: theme.accent }}>
                             System_Core_v9.1
                         </span>
-                        <motion.span 
-                            animate={{ opacity: [1, 0.85, 1] }} 
+                        <motion.span
+                            animate={{ opacity: [1, 0.85, 1] }}
                             transition={{ duration: 2, repeat: Infinity }}
-                            className="text-sm md:text-base font-black tracking-[4px] md:tracking-[6px] uppercase mt-1 whitespace-nowrap" 
+                            className="text-sm md:text-base font-black tracking-[4px] md:tracking-[6px] uppercase mt-1 whitespace-nowrap"
                             style={{ color: '#ffffff', textShadow: `0 0 15px ${theme.accent}` }}
                         >
                             SIDDHARTH // OS
@@ -153,11 +153,11 @@ const GridBackground = () => {
                 </div>
                 <div className="mt-3 flex gap-4 opacity-80 text-[8px] font-mono whitespace-nowrap uppercase tracking-widest text-[#e5e7eb]">
                     <span className="flex items-center gap-2">
-                        <motion.div 
-                            animate={{ opacity: [1, 0] }} 
-                            transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }} 
-                            className="w-1.5 h-1.5 rounded-full" 
-                            style={{ backgroundColor: theme.accent, boxShadow: `0 0 8px ${theme.accent}` }} 
+                        <motion.div
+                            animate={{ opacity: [1, 0] }}
+                            transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }}
+                            className="w-1.5 h-1.5 rounded-full"
+                            style={{ backgroundColor: theme.accent, boxShadow: `0 0 8px ${theme.accent}` }}
                         />
                         SYS_OP: ONLINE
                     </span>
@@ -180,7 +180,7 @@ const GridBackground = () => {
             />
 
             {/* Intense Vignette to keep focus center and hide rough edges */}
-            <div 
+            <div
                 className="absolute inset-0 pointer-events-none z-[4]"
                 style={{
                     background: 'radial-gradient(circle at center, transparent 15%, rgba(0,0,0,0.98) 95%)',
@@ -188,13 +188,13 @@ const GridBackground = () => {
             />
 
             {/* Noise Grain Texture overlay */}
-            <div 
+            <div
                 className="absolute inset-0 pointer-events-none opacity-[0.05] mix-blend-screen z-[5]"
                 style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
                 }}
             />
-            
+
             {/* Extremely subtle global vertical scanning pulse */}
             <motion.div
                 animate={{ top: ['-10%', '110%'] }}
