@@ -24,7 +24,7 @@ const MatrixRain = () => {
 
         const draw = () => {
             // Darken background with trail effect
-            ctx.fillStyle = 'rgba(13,13,15, 0.1)';
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
             ctx.fillRect(0, 0, width, height);
             
             ctx.font = `${FONT_SIZE}px monospace`;
