@@ -42,7 +42,7 @@ const SOCIALS = [
     // },
     {
         name: 'Portfolio',
-        url: 'https://siddharth.dev',
+        url: 'https://terminal-port-eight.vercel.app/',
         icon: Globe,
         color: '#89b4fa',
         handle: 'siddharth.dev'
