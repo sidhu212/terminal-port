@@ -21,7 +21,6 @@ const INFO_ROWS = (theme) => [
     { label: null, value: '████████  Color Palette', color: null, palette: true },
 ];
 
-const PALETTE_COLORS = ['#f27b7d', '#89b4fa', '#a6e3a1', '#f9e2af', '#cba6f7', '#94e2d5'];
 
 const Neofetch = () => {
     const { theme, switchTheme, THEMES } = useTheme();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter, Instagram, Globe, MessageCircle } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram, Globe, MessageCircle } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const SOCIALS = [
