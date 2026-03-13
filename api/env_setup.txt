@@ -1,0 +1,12 @@
+# Put your Gmail address here
+EMAIL_USER=siddharthsingh0259@gmail.com
+
+# Put your Gmail App Password here
+# To get this: 
+# 1. Enable 2-Step Verification on your Google Account
+# 2. Go to Security > App Passwords
+# 3. Select 'Mail' and 'Other (Portfolio Terminal)'
+# 4. Copy the 16-character code and paste it below
+EMAIL_PASS=your_gmail_app_password_here
+
+PORT=5000

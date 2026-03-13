@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base styles ─────────────────────────────────────────── */
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    cursor: none;
+  }
+
+  * {
+    cursor: none !important;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0d0d0f;
+    color: #e5e7eb;
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+}
+
+/* ─── Scrollbar hide ──────────────────────────────────────── */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* ─── CRT scanline overlay ────────────────────────────────── */
+.scanline {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: repeating-linear-gradient(to bottom,
+      transparent 0px,
+      transparent 1px,
+      rgba(0, 0, 0, 0.07) 1px,
+      rgba(0, 0, 0, 0.07) 2px);
+  pointer-events: none;
+}
+
+/* ─── Blinking block cursor ───────────────────────────────── */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ─── Coral text glow ─────────────────────────────────────── */
+.text-glow {
+  text-shadow: 0 0 10px rgba(242, 123, 125, 0.65);
+}
+
+/* ─── Terminal window pulsing glow border ─────────────────── */
+.terminal-glow {
+  box-shadow:
+    0 0 0 1px rgba(242, 123, 125, 0.15),
+    0 0 30px rgba(242, 123, 125, 0.05),
+    0 30px 80px rgba(0, 0, 0, 0.9);
+  animation: borderPulse 4s ease-in-out infinite;
+}
+
+@keyframes borderPulse {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(242, 123, 125, 0.15),
+      0 0 30px rgba(242, 123, 125, 0.05),
+      0 30px 80px rgba(0, 0, 0, 0.9);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(242, 123, 125, 0.40),
+      0 0 50px rgba(242, 123, 125, 0.12),
+      0 30px 80px rgba(0, 0, 0, 0.9);
+  }
+}
