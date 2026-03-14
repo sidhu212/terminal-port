@@ -209,7 +209,7 @@ const Terminal = () => {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="relative z-10 w-full max-w-4xl h-[85vh] sm:h-[80vh] bg-[#0d0d0f] border rounded-xl overflow-hidden flex flex-col"
+            className="relative z-10 w-full max-w-4xl h-full max-h-[85dvh] sm:max-h-[80dvh] bg-[#0d0d0f] border rounded-xl overflow-hidden flex flex-col mx-auto shadow-2xl"
             style={{
                 borderColor: `${theme.accent}33`,
                 boxShadow: `0 30px 80px rgba(0,0,0,0.9), 0 0 0 1px ${theme.border}, 0 0 30px ${theme.glow1}`
@@ -242,7 +242,7 @@ const Terminal = () => {
                 <div className="w-8 md:w-16" />
             </div>
 
-            <div className="flex-grow overflow-y-auto scrollbar-hide p-4 md:p-6 text-[13.5px] md:text-[14.5px] leading-7 font-mono relative">
+            <div className="flex-grow overflow-y-auto overflow-x-hidden scrollbar-hide p-3 sm:p-4 md:p-6 text-[13px] sm:text-[13.5px] md:text-[14.5px] leading-6 sm:leading-7 font-mono relative pb-8 md:pb-6">
                 <GlitchHeader text={ASCII_HEADER_TEXT} color={theme.accent} />
                 <TerminalOutput history={history} />
                 <TerminalInput onSubmit={handleCommand} history={history} currentPath={currentPath} />

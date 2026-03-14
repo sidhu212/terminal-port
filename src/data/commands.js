@@ -1,7 +1,7 @@
 export const COMMANDS = {
-    help: {
-        description: "list all commands",
-        content: `Available commands:
+   help: {
+      description: "list all commands",
+      content: `Available commands:
 
 📁 Navigation:
   about         - Show about section
@@ -20,33 +20,33 @@ export const COMMANDS = {
 
 🛠️ System:
   neofetch      - System info (pretty)
-  theme         - Change terminal color theme
+  theme         - Change terminal color
   clear         - Clear terminal
   whoami        - Session information
   date          - Show current date
   time          - Show current time
   ls            - List available sections
   echo [text]   - Print text to terminal`,
-    },
-    date: {
-        description: "show current date",
-        content: null,
-    },
-    time: {
-        description: "show current time",
-        content: null,
-    },
-    ls: {
-        description: "list sections",
-        content: null,
-    },
-    echo: {
-        description: "print text",
-        content: null,
-    },
-    theme: {
-        description: "change terminal color theme",
-        content: `Available Themes:
+   },
+   date: {
+      description: "show current date",
+      content: null,
+   },
+   time: {
+      description: "show current time",
+      content: null,
+   },
+   ls: {
+      description: "list sections",
+      content: null,
+   },
+   echo: {
+      description: "print text",
+      content: null,
+   },
+   theme: {
+      description: "change terminal color",
+      content: `Available Themes:
 - coral (default)
 - matrix
 - cyber
@@ -55,23 +55,23 @@ export const COMMANDS = {
 
 Usage: theme [theme_name]
 Example: theme matrix`,
-    },
-    about: {
-        description: "about Siddharth",
-        content: `Name: Siddharth Singh
+   },
+   about: {
+      description: "about Siddharth",
+      content: `Name: Siddharth Singh
 Role: Software Developer
 Bio: Software developer with experience in developing web and mobile solutions using modern frameworks and clean coding practices.
 Passionate about problem-solving and exploring new technologies. Comfortable working with APIs, databases, and system workflows.
 Seeking opportunities to apply and grow these skills in real-world projects.`,
-    },
-    skills: {
-        description: "technical skills",
-        content: null,
-        visualType: 'skills',
-    },
-    projects: {
-        description: "portfolio projects",
-        content: `1. AI Powered Chronic Disease Management System
+   },
+   skills: {
+      description: "technical skills",
+      content: null,
+      visualType: 'skills',
+   },
+   projects: {
+      description: "portfolio projects",
+      content: `1. AI Powered Chronic Disease Management System
    Tech: PHP, MySQL, Gemini API
    Telehealth system for health tracking and AI-generated insights.
    Presented at Yukti Innovation Challenge 2025.
@@ -88,16 +88,16 @@ Seeking opportunities to apply and grow these skills in real-world projects.`,
 4. E-Commerce Website
    Tech: React, Firebase, Stripe
    Responsive site with authentication, shopping cart, and payments.`,
-        links: [
-            { label: "1. AI Disease Management (Demo) →", url: "https://chronicpulse.wuaze.com/public/" },
-            { label: "2. VEIP Platform (Demo) →", url: "https://vission-landing-page.vercel.app/" },
-            { label: "3. JARVIS Voice Assistant (Demo) →", url: "https://sidhu212.github.io/virtual-assistant/" },
-            { label: "4. E-Commerce Site (GitHub) →", url: "https://github.com/sidhu212/e-commerce-website" },
-        ],
-    },
-    experience: {
-        description: "work experience",
-        content: `🏢 TOSS Consultancy Services
+      links: [
+         { label: "1. AI Disease Management (Demo) →", url: "https://chronicpulse.wuaze.com/public/" },
+         { label: "2. VEIP Platform (Demo) →", url: "https://vission-landing-page.vercel.app/" },
+         { label: "3. JARVIS Voice Assistant (Demo) →", url: "https://sidhu212.github.io/virtual-assistant/" },
+         { label: "4. E-Commerce Site (GitHub) →", url: "https://github.com/sidhu212/e-commerce-website" },
+      ],
+   },
+   experience: {
+      description: "work experience",
+      content: `🏢 TOSS Consultancy Services
    Role: Software Developer Intern (2025)
    - Built real-time emergency ambulance response platform with GPS tracking.
    - Used PHP (CodeIgniter) for dispatch automation and case management.
@@ -106,10 +106,10 @@ Seeking opportunities to apply and grow these skills in real-world projects.`,
    Role: Operational Head @ GGCT
    - Spearheaded technical workshops and community engagement initiatives.`,
 
-    },
-    education: {
-        description: "educational background",
-        content: `🎓 B.Tech in CSE — Gyan Ganga College of Technology
+   },
+   education: {
+      description: "educational background",
+      content: `🎓 B.Tech in CSE — Gyan Ganga College of Technology
    CGPA: 7.36 | Expected June 2026
    Location: Jabalpur, Madhya Pradesh
 
@@ -118,10 +118,10 @@ Seeking opportunities to apply and grow these skills in real-world projects.`,
 
 🏫 Little Kingdom Sr. Sec. School
    Class X | 2020 | Percentage: 61%`,
-    },
-    achievements: {
-        description: "awards & competitions",
-        content: `🏆 SMART INDIA HACKATHON (SIH) 2024 - Finalist
+   },
+   achievements: {
+      description: "awards & competitions",
+      content: `🏆 SMART INDIA HACKATHON (SIH) 2024 - Finalist
    Project: Chronic Disease AI Management
 
 🎖️ YUKTI: National Innovation Repository
@@ -129,10 +129,10 @@ Seeking opportunities to apply and grow these skills in real-world projects.`,
 
 💎 GDSC Gyan Ganga
    Contributor & Core Team Member`,
-    },
-    certifications: {
-        description: "professional certs",
-        content: `🏆 CCNA: Enterprise Networking, Security, and Automation
+   },
+   certifications: {
+      description: "professional certs",
+      content: `🏆 CCNA: Enterprise Networking, Security, and Automation
    Cisco Networking Academy | May 31, 2025
 
 🏆 CCNA: Switching, Routing, and Wireless Essentials
@@ -176,63 +176,63 @@ Seeking opportunities to apply and grow these skills in real-world projects.`,
 
 🏆 Salesforce AI Agent Developer
    SmartBridge | October 18, 2025`,
-    },
-    contact: {
-        description: "contact details",
-        content: `📞 Phone: +91 7898140799
+   },
+   contact: {
+      description: "contact details",
+      content: `📞 Phone: +91 7898140799
 📧 Email: siddharthsingh0259@gmail.com
 📍 Location: Jabalpur, MP
 
 To send a direct message:
 Type 'cd message' to start the interactive message wizard.`,
-    },
-    social: {
-        description: "social media profiles",
-        content: null,
-        visualType: 'social',
-    },
-    resume: {
-        description: "view curriculum vitae",
-        content: null,
-        visualType: 'resume',
-    },
-    download: {
-        description: "download resume PDF",
-        content: "Initiating resume download sequence...",
-    },
-    neofetch: {
-        description: "system info (neofetch style)",
-        content: null,
-        visualType: 'neofetch',
-    },
-    whoami: {
-        description: "session status",
-        content: `User: visitor@siddharth
+   },
+   social: {
+      description: "social media profiles",
+      content: null,
+      visualType: 'social',
+   },
+   resume: {
+      description: "view curriculum vitae",
+      content: null,
+      visualType: 'resume',
+   },
+   download: {
+      description: "download resume PDF",
+      content: "Initiating resume download sequence...",
+   },
+   neofetch: {
+      description: "system info (neofetch style)",
+      content: null,
+      visualType: 'neofetch',
+   },
+   whoami: {
+      description: "session status",
+      content: `User: visitor@siddharth
 Status: ACTIVE
 Role: PORTFOLIO_GUEST
 Uptime: ${Math.floor(Math.random() * 500) + 10}m`,
-    },
-    matrix: {
-        description: "hidden: enter the matrix",
-        content: `Wake up, Neo...
+   },
+   matrix: {
+      description: "hidden: enter the matrix",
+      content: `Wake up, Neo...
 The Matrix has you...
 Follow the white rabbit.
 Knock, knock, Neo.`,
-    },
-    hack: {
-        description: "hidden: system override",
-        content: `[SYSTEM OVERRIDE INITIATED]
+   },
+   hack: {
+      description: "hidden: system override",
+      content: `[SYSTEM OVERRIDE INITIATED]
 Accessing kernel memory... OK
 Bypassing firewall... OK
 Decrypting files... OK
 Gaining root access... [ACCESS GRANTED]
 Welcome, Admin.`,
-    },
-    'hire-me': {
-        description: "hidden command",
-        content: `🎉 Thank you for considering me!
+   },
+   'hire-me': {
+      description: "hidden command",
+      content: `🎉 Thank you for considering me!
 I am ready to bring my energy and skills to your team.
 Let's build something amazing together.
 Email: siddharthsingh0259@gmail.com`,
-    }
+   }
 };

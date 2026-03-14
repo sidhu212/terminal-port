@@ -35,7 +35,7 @@ const BootLoader = ({ onComplete }) => {
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col items-start justify-center h-screen px-6 md:px-12 font-mono relative z-10"
+                    className="flex flex-col items-start justify-center h-[100dvh] w-full px-4 sm:px-6 md:px-12 font-mono relative z-10 mx-auto max-w-4xl"
                 >
                     <div
                         className="mb-8 text-2xl md:text-4xl font-bold tracking-widest"

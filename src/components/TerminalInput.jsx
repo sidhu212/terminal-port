@@ -53,7 +53,7 @@ const TerminalInput = ({ onSubmit, history, currentPath }) => {
 
     return (
         <div className="flex items-center gap-2 w-full mt-1">
-            <div className="flex items-center gap-1 flex-shrink-0">
+            <div className="flex items-center gap-1 flex-shrink-0 text-[13px] sm:text-[13.5px] md:text-[14.5px]">
                 <span style={{ color: theme.accent }} className="font-bold">
                     <span className="hidden xs:inline">siddharth@portfolio</span>
                     <span className="xs:hidden">sid</span>
@@ -72,7 +72,7 @@ const TerminalInput = ({ onSubmit, history, currentPath }) => {
                     onChange={e => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder="type 'help' for commands..."
-                    className="bg-transparent border-none outline-none text-white w-full font-mono caret-transparent text-[14.5px] placeholder:text-white/20 placeholder:italic"
+                    className="bg-transparent border-none outline-none text-white w-full font-mono caret-transparent text-[16px] md:text-[14.5px] placeholder:text-white/20 placeholder:italic"
                     autoFocus
                     spellCheck="false"
                     autoComplete="off"
